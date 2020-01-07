@@ -4,7 +4,7 @@ class Recipes extends Component {
 	render() {
 		return (
 			<div>
-				<h4> this is recipes page recipes.js</h4>
+				<h4> this is recipes page</h4>
 			</div>
 		);
 	}
