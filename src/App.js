@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Recipes from "./pages/Recipes";
 import SingleRecipe from "./pages/SingleRecipe";
@@ -15,7 +16,7 @@ class App extends Component {
 		return (
 			<Router>
 				<main>
-					{/* navbar */}
+					<Navbar />
 					<Switch>
 						<Route exact path='/' component={Home} />
 						<Route exact path='/recipes' component={Recipes} />
