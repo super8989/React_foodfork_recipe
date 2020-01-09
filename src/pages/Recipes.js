@@ -14,11 +14,25 @@ class Recipes extends Component {
 		search: ""
 	};
 
+	handleChange = e => {
+		this.setState({
+			search: e.target.value
+		});
+	};
+
+	handleSubmit = e => {
+		e.preventDefault();
+	};
+
 	render() {
 		return (
 			<>
-				<Search />
-				<RecipeList />
+				<Search
+					search={this.state.search}
+					handleChange={this.handleChange}
+					handleSubmit={this.handleSubmit}
+				/>
+				<RecipeList recipes={this.state.recipes} />
 			</>
 		);
 	}
